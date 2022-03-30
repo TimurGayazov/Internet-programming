@@ -1,0 +1,66 @@
+html{
+    background: #D3D3D3;
+} 
+main{
+     background: #D3D3D3;
+}
+body{
+    background: #D3D3D3;
+    overflow: hidden;
+}
+
+
+.rty{
+    width: 50%;
+    height: 100%;
+    position: fixed;
+}
+
+.qwe{
+    width: 50%;
+    height: 56vw;
+    float: right;
+}
+
+.container h3{
+    margin-top: 0%;
+}
+
+.ft1{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.ft2 {
+    margin-right: 10px;
+    margin-top: 10px;
+    float: right;
+    text-align: end;
+}
+.fx_bot{
+    vertical-align: bottom;
+}
+.c_ard{
+    margin: auto;
+    margin-top: 10%;
+    box-shadow: 0 0 10px #696969;
+}
+
+.navbar a{
+    color: black;
+}
+.container{
+    /* float: left; */
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.carousel{
+    margin-top: 10px;
+}
+.c_ont{
+    margin-top: 10%;
+}
+.c_on{
+    margin-top: 5%;
+}

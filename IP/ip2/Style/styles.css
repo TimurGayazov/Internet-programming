@@ -44,15 +44,22 @@ body{
 .c_ard{
     margin: auto;
     margin-top: 10%;
-    box-shadow: 0 0 10px #696969;
+    box-shadow: 0 0 50px #757f9a;
+}
+.c_ard:hover{
+    box-shadow: 0 0 75px #757f9a;
 }
 
 .navbar a{
     color: black;
 }
 .container{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 10px;
+    /* margin: auto; */
+}
+.about{
+    margin-top: 70px;
 }
 .carousel{
     margin-top: 10px;
@@ -62,4 +69,77 @@ body{
 }
 .c_on{
     margin-top: 5%;
+}
+/* .project_1{
+    width: 500px;
+    height: 4100px;
+} */
+.gallery_block{
+    margin: auto;
+    margin-top: 40px;
+    width: 640px;
+    height: 477px;
+    background-color: #c0c0c0;
+    border-radius: 10px;
+    box-shadow: 0 0 50px #757f9a;
+}
+.gallery_block:hover{
+    box-shadow: 0 0 75px #757f9a;
+}
+.gallery_1{
+    /* margin: auto;
+    margin-top: 10px;
+    width: 900px;
+    height: 400px;
+    border-radius: 4px; */
+    /* background-color: aqua; */
+    /* background-image:url(../Images/about1.jpg); */
+}
+
+.image_1{
+    margin: auto;
+    margin-top: 10px;
+    width: 640px;
+    height: 427px;
+    border-radius: 10px;
+    background-image: url(../Images/image_1.jpg);
+    transition: all ease 1.5s;
+}
+
+.image_2{
+    margin: auto;
+    margin-top: 10px;
+    width: 640px;
+    height: 426px;
+    border-radius: 10px;    
+    background-image: url(../Images/image_2.jpg);
+    transition: all ease 1.5s;
+}
+
+.image_3{
+    margin: auto;
+    margin-top: 10px;
+    width: 640px;
+    height: 426px;
+    border-radius: 10px;    
+    background-image: url(../Images/image_3.jpg);
+    transition: all ease 1.5s;
+}
+
+
+
+
+.last-btn{
+    /* display: none; */
+    /* visibility: hidden; */
+}
+.last-btn1{
+    visibility: visible;
+}
+
+.next-btn{
+    visibility: visible;
+}
+.next-btn1{
+    visibility: hidden;
 }

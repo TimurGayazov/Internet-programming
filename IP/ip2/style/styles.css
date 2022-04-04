@@ -90,7 +90,7 @@ body{
     width: 640px;
     height: 427px;
     border-radius: 10px;
-    background-image: url(../Images/image_1.jpg);
+    background-image: url(../images/image_1.jpg);
     transition: all ease 1.5s;
 }
 
@@ -100,7 +100,7 @@ body{
     width: 640px;
     height: 426px;
     border-radius: 10px;    
-    background-image: url(../Images/image_2.jpg);
+    background-image: url(../images/image_2.jpg);
     transition: all ease 1.5s;
 }
 
@@ -110,7 +110,7 @@ body{
     width: 640px;
     height: 426px;
     border-radius: 10px;    
-    background-image: url(../Images/image_3.jpg);
+    background-image: url(../images/image_3.jpg);
     transition: all ease 1.5s;
 }
 

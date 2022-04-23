@@ -24,22 +24,22 @@
               <form class="d-flex">
                 <ul class="nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link active text-secondary" href="../index.html">Home</a>
+                        <a class="nav-link text-secondary" href="../index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active text-dark" href="../pages/about.html">About Me</a>
+                      <a class="nav-link text-secondary" href="../pages/about.php">About Me</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-secondary" href="../pages/hobbies.html">Hobbies</a>
+                      <a class="nav-link text-dark" href="../pages/hobbies.php">Hobbies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="../pages/gallery.html">Gallery</a>
+                        <a class="nav-link text-secondary" href="../pages/gallery.php">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="../pages/myprojects.html">My Projects</a>
+                        <a class="nav-link text-secondary" href="../pages/myprojects.php">My Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/login.html">
+                        <a class="nav-link" href="../pages/login.php">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
                                 <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
                             </svg>
@@ -49,20 +49,25 @@
               </form>
             </div>
         </nav>
-        <div class="container about">
+        <div class="container c_on">
             <div class="row">
-                <div class="col-sm-8">
-                    <h4>
-                        Hi, everybody, my name is Timur Gayazov. I am from Russia from a small town of Ulyanovsk.
-                        I am 18 years old and I am studying at ULSTU. I am studying at the Faculty of Information Technology.
-                        I got acquainted with programming for the first time in the 8th grade. At the moment I am proficient in programming languages such as: C++, Python, C#, Pascal. 
-                        I also continue to improve my skills in JS, Java and Php.
-                        For all the time I have spent learning programming languages, I have created a number of projects that you can find out about on the <a href="./myprojects.html">My Projects</a> page. 
-                        In the future, I would like to continue studying programming with the same interest as now and become a successful in-demand specialist.
+                <div class="col">
+                    <img src="../images/music.jpg" class="img-thumbnail" style="width: 640px; height: 425px;">
+                    <h4>My most important hobby is listening to good music. 
+                        I like to listen to such genres of music as R&B, Reggae, hip-hop/rap, lyrics.
+                        My favorite performers are Scriptonite, Lizer, Miyagi & Andy Panda.
+                        I don't just listen to the music of these artists, but immerse myself in the essence of the texts and share the global ideas that these artists promote.
                     </h4>
                 </div>
-                <div class="col-sm-4">
-                    <img src="../images/aboutme.jpg" class="img-thumbnail" style="width: 640px; height: 426px;">
+                <div class="col">
+                    <img src="../images/travel.jpg" class="img-thumbnail" style="width: 640px; height: 425px;">
+                    <h4>
+                        I also love to travel. I have visited many countries of the world. 
+                        Traveling helps to change the type of activity, especially if your everyday life is working at a computer. 
+                        Thanks to travel, we develop organizational skills, develop horizons, and also slow down time. 
+                        Because for us it is not something familiar-ordinary and time slows down.
+                    </h4>
+                        
                 </div>
               </div>
         </div>

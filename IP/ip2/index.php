@@ -45,7 +45,7 @@
                     <div class="ft2 fixed-top">
                         
                         <div class="inl_bl"></div>
-                            <a href="./pages/login.html" class="text-dark" style="text-decoration: none;"><h3>Log in</h3></a>
+                            <a href="./pages/login.php" class="text-dark" style="text-decoration: none;"><h3>Log in</h3></a>
                         </div>
                     </div>
                     <div class="col-8 mx-auto rounded main_text_index">
@@ -59,10 +59,10 @@
 
                     </div>
                         <div class="d-grid gap-4 col-8 mx-auto rounded butt_index">
-                            <a href="./pages/about.html" class="custom_butt_index" type="button">About Me</a>
-                            <a href="./pages/hobbies.html" class="custom_butt_index" type="button">Hobbies</a>
-                            <a href="./pages/gallery.html" class="custom_butt_index" type="button">Gallery</a>
-                            <a href="./pages/myprojects.html" class="custom_butt_index" type="button">My Projects</a>
+                            <a href="./pages/about.php" class="custom_butt_index" type="button">About Me</a>
+                            <a href="./pages/hobbies.php" class="custom_butt_index" type="button">Hobbies</a>
+                            <a href="./pages/gallery.php" class="custom_butt_index" type="button">Gallery</a>
+                            <a href="./pages/myprojects.php" class="custom_butt_index" type="button">My Projects</a>
                         </div>
                         <br>
                         <div class="d-flex gap-5 col-6 mx-auto rounded mr-auto svg_index">
@@ -87,7 +87,7 @@
                             <h6 class="text-secondary"> © 2022 by Timur Gayazov. Proudly created with Microsoft.</h6>
                         </div>
 
-
+                        
                 </div>
             </div>
         </ul>

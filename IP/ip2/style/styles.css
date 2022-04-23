@@ -76,7 +76,7 @@ body{
 .gallery_block{
     margin: auto;
     margin-top: 40px;
-    width: 660px;
+    width: 1000px;
     height: 477px;
     background-color: #c0c0c0;
     border-radius: 10px;
@@ -86,36 +86,23 @@ body{
     box-shadow: 0 0 75px #757f9a;
 }
 
-.image_1{
-    margin: auto;
-    margin-top: 10px;
-    width: 640px;
-    height: 427px;
-    border-radius: 10px;
-    background-image: url(../images/image_1.jpg);
-    transition: all ease 1.5s;
-    /* transition: initial 2s ease; */
-}
-
-.image_2{
-    margin: auto;
-    margin-top: 10px;
+.slider{
     width: 640px;
     height: 426px;
-    border-radius: 10px;    
-    background-image: url(../images/image_2.jpg);
-    transition: all ease 1.5s;
+    border: 2px solid black;
+    border-radius: 10px; 
+    margin: 30px auto;
+    overflow: hidden;
+}
+.slider-line{
+    height: 426px;
+    width: 1920px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
 }
 
-.image_3{
-    margin: auto;
-    margin-top: 10px;
-    width: 640px;
-    height: 426px;
-    border-radius: 10px;    
-    background-image: url(../images/image_3.jpg);
-    transition: all ease 1.5s;
-}
 .ava_index img{
     width: 590px; 
     height: 590px;

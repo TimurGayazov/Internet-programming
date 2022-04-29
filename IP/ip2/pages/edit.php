@@ -1,8 +1,16 @@
 <?php
     session_start();
-    if($_SESSION['user']){
+    if(!$_SESSION['user']){
+      header('Location: ../pages/login.php');
+    }
+    if($_SESSION['user']['role'] === "User" || $_SESSION['user']['role'] === "Main Admin"){
       header('Location: ../inc/profile.php');
     }
+    require_once '../inc/connect.php';
+    $li_id = $_GET['id'];
+    $li_full_name = $_GET['full_name'];
+    $li = mysqli_query($connect,"SELECT * FROM `users` WHERE `id` = '$li_id'"); 
+    $li = mysqli_fetch_assoc($li);
       
 ?>
 
@@ -17,7 +25,7 @@
     <link id="favicon" rel="icon" href="..//images/icon.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Registration</title>
+    <title>Edit info an account № <?= $li_id ?></title>
 </head>
 <body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -27,43 +35,27 @@
 
 
     <main>
-      <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">             
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <a class="btn btn-light" href="../index.php" type="submit" style="float: inline-start; margin-left: 5px; margin-top: 5px; align-items: center; background: #d3d3d3; border-color: #d3d3d3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                      <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                  </svg>
-              </a>  
-            </div>
-          </div>
-        </nav>
 
         <!-- <p class="positioned"> 123123123 </p> -->
         
 
 
         <div class="text-center">
-          <form class="text-center" action="../inc/signup.php" method="post" enctype="multipart/form-data">
-            
-            <label>Your name</label>
-            <input type="text" name="full_name" placeholder="Enter your name">
+          <form class="text-center" action="../inc/update.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="id" value="<?= $li['id']?>">
+            <label>Name</label>
+            <input type="text" name="full_name" placeholder="Enter new name" value="<?= $li['full_name']?>">
             <label>Login</label>
-            <input type="text" name="login" placeholder="Enter your login">
+            <input type="text" name="login" placeholder="Enter new login" value="<?= $li['login']?>">
             <label>Email</label>
-            <input type="email" name="email" placeholder="Enter your email">
-            <label>Profile picture</label>
-            <input type="file" name="avatar">
+            <input type="email" name="email" placeholder="Enter new email" value="<?= $li['email']?>">
             <label>Password</label>
-            <input type="password" required name="password" placeholder="Enter your password">
-            <label>Password confirmation</label>
-            <input type="password" name="password_confirm" placeholder="Confirm your password">
+            <input type="password" required name="password" placeholder="Enter new password" value="<?= $li['password']?>">
             <br>
-            <button type="submit">Register an account</button>
-            <p>
-            Do you already have an account? - <a href="./login.php" class="hint">Log in</a>
-            </p>
+            <button type="submit">Update information</button>
+            <br>
+            <a href="../inc/users.php" style="color:red; border:2px solid red; text-decoration:none;"><h5>Cancel</h5></a>
+            
           </form>
         </div>
         <?php

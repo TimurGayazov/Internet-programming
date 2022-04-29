@@ -1,0 +1,41 @@
+html{
+    background: #D3D3D3;
+} 
+main{
+     background: #D3D3D3;
+}
+body{
+    background: #D3D3D3;
+    overflow: hidden;
+}
+.container h3{
+    margin-top: 0%;
+}
+
+.navbar a{
+    color: black;
+}
+.container{
+    margin-top: 20px;
+    margin-left: 10px;
+    /* margin: auto; */
+}
+
+.profile_block{
+    margin: auto;
+    margin-top: 40px;
+    width: 1000px;
+    height: 477px;
+    background-color: #c0c0c0;
+    border-radius: 10px;
+    box-shadow: 0 0 50px #757f9a;
+}
+
+
+
+
+
+
+
+
+

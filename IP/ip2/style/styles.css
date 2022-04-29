@@ -10,6 +10,7 @@ body{
 }
 
 
+
 .rty{
     width: 50%;
     height: 100%;
@@ -125,6 +126,13 @@ body{
     text-decoration: none;
     text-align: center;
     color: white;
+}
+
+.profile_card{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    display: flex;
 }
 
 

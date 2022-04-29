@@ -1,0 +1,133 @@
+html{
+    background: #D3D3D3;
+} 
+main{
+     background: #D3D3D3;
+}
+body{
+    background: #D3D3D3;
+    overflow: hidden;
+}
+.container h3{
+    margin-top: 0%;
+}
+
+.navbar a{
+    color: black;
+}
+.container{
+    margin-top: 20px;
+    margin-left: 10px;
+    /* margin: auto; */
+}
+
+.game{
+    width: 600px;
+    height: 200px;
+    border-bottom: 2px solid black;
+    margin: auto;
+    display: none;
+}
+#bird{
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/bird.png);
+    background-size: 50px 50px;
+    position: relative;
+    left: 30px;
+    top: 140px;
+}
+
+#croco{
+    width: 70px;
+    height: 40px;
+    background-image: url(../images/crocodile.png);
+    background-size: 70px 40px;
+    position: relative;
+    top: 115px;
+    left: 530px;
+    animation: crocoMov 3s infinite linear;
+}
+
+@keyframes crocoMov {
+    0%{
+        left: 530px;
+    }
+    100%{
+        left: -70px;
+    }
+}
+
+.jump{
+    animation: jump 1s linear;
+}
+
+@keyframes jump {
+    0%{
+        top: 140px;
+    }
+    30%{
+        top: 100px;
+    }
+    50%{
+        top: 70px;
+    }
+    80%{
+        top: 100px;
+    }
+    100%{
+        top: 140px;
+    }
+}
+.but_cl{
+    margin: auto;
+    width: 600px;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(72, 255, 0);
+    border: 2px solid silver;
+}
+
+.first_butt{
+    display: block;
+}
+#result{
+    margin: auto;
+    width: 600px;
+    height: auto;
+    padding: 20px;
+    border: 2px solid silver;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    border-radius: 10px;
+}
+.save{
+    /* display: none; */
+    visibility: hidden;
+    margin: auto;
+    background-color: blue;
+    border: 2px solid silver;
+}
+
+.output_res{
+    background-color: #D3D3D3;
+    border: unset;
+    width: 100px;
+    cursor:default;
+}
+
+
+
+
+
+
+
+

@@ -133,7 +133,7 @@
     ?>
   </tbody>
 </table>
-            <a href="./profile.php" style="color:blue; text-decoration:none; border:2px solid blue; padding:5px; border-radius: 10px;">Go back to the profile page</a>
+<a href="./profile.php" class="btn btn-outline-dark" style="text-decoration:none; padding:5px; margin-left:5px;">Go back to the profile page</a>
         </div>
 
 

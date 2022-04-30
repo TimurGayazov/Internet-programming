@@ -73,7 +73,9 @@
     <div class="game" id="start">
         
         <div id="bird"></div>
+        
         <div id="croco"></div>
+        <div id="dinobird"></div>
         <div id="score">
             <h3>Your score: <b>00</b></h3>
         </div>

@@ -27,6 +27,8 @@ body{
     border-bottom: 2px solid black;
     margin: auto;
     display: none;
+    background:linear-gradient(#00C9FF,#00C9FF,#92FE9D);
+    border-radius: 10px;
 }
 #bird{
     width: 50px;
@@ -48,8 +50,27 @@ body{
     left: 530px;
     animation: crocoMov 3s infinite linear;
 }
-
+#dinobird{
+    width: 50px;
+    height: 40px;
+    background-image: url(../images/dinobird.png);
+    background-size: 50px 40px;
+    position: relative;
+    top: 0;
+    left: 540px;
+    animation: dinoMov 6s infinite linear;
+    display: none;
+}
 @keyframes crocoMov {
+    0%{
+        left: 530px;
+    }
+    100%{
+        left: -70px;
+    }
+}
+
+@keyframes dinoMov {
     0%{
         left: 530px;
     }

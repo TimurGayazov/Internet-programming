@@ -1,0 +1,96 @@
+*{
+    padding: 2px;
+    margin: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+}
+html {
+    background-image: url(../images/1626192986_52-kartinkin-com-p-fon-dlya-messendzhera-krasivo-54.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 2;
+    font-size: 14px;
+    position: relative;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body1{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 3px;
+}
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);  
+    float:left;
+    max-width: 600px;
+    text-align: justify;    
+}
+.top-menu li a::after{
+    content: '';
+    display: block;
+    width:100%;
+    background-color: yellow;
+    height:1px;
+    transition: all 0.3S;
+    transform: scale(0);
+}
+.top-menu li a:hover::after{
+    transform: scale(1);
+}
+.left{ 
+   object-fit: cover;
+   height: auto;
+   width: 100%;
+   max-width: 600px;
+   border: 3px solid yellow;
+   border-radius: 0.25rem;
+   
+}
+.right{
+    object-fit: cover; 
+    height: auto;
+    width:100%;
+    max-width: 600px;
+    border: 3px solid yellow;
+    border-radius: 0.25rem;
+}
+
+@media (max-width: 600px) {
+    h {
+        font-size: 15px;
+        
+    }
+}
+@media (max-width: 1200px) and (min-width: 601px) {
+    h {
+        font-size: calc(1.3rem + 1 * (100vw - 320px) / 880);
+    }
+}
+@media (min-width: 1201px) {    
+    h {
+        font-size: 18px;
+    }
+}

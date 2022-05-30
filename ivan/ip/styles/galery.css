@@ -1,0 +1,92 @@
+*{
+    padding: 2px;
+    margin: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+}
+html {
+    background-image: url(../images/1626192986_52-kartinkin-com-p-fon-dlya-messendzhera-krasivo-54.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 2;
+    font-size: 14px;
+    position: relative;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body1{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 30px;
+}
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.top-menu li a::after{
+    content: '';
+    display: block;
+    width:100%;
+    background-color: yellow;
+    height:1px;
+    transition: all 0.3S;
+    transform: scale(0);
+}
+.top-menu li a:hover::after{
+    transform: scale(1);
+}
+
+.btn{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: left; 
+    align-items: left;
+    display: inline-block;
+    border: 3px solid gray;
+    margin-top: 2%;
+    margin-left: 31%;
+} 
+.btn:hover{
+    color: yellow;
+}
+#mainImage{
+    width: 1200px;
+    height: 800px;
+}    
+.elementImage{
+    height: 2px;
+}
+#background_image{
+    width: 0px;
+}
+.main_gallery{
+    width: 1200px;
+}
+.elementImage{
+    width:1200px;
+}
+ 

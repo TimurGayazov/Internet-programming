@@ -1,0 +1,198 @@
+*{
+    padding: 2px;
+    margin: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+}
+html {
+    background-image: url(../images/1626192986_52-kartinkin-com-p-fon-dlya-messendzhera-krasivo-54.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 2;
+    font-size: 14px;
+    position: relative;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body1{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 50px;
+    
+}
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    color:yellow;
+    font-size: 30px; 
+}
+.mass{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    color:yellow;
+    font-size: 30px; 
+}
+.top-menu li a::after{
+    content: '';
+    display: block;
+    width:100%;
+    background-color: yellow;
+    height:1px;
+    transition: all 0.3S;
+    transform: scale(0);
+}
+.top-menu li a:hover::after{
+    transform: scale(1);
+}
+canvas{  
+    justify-content: center;
+    top: 80px;
+    border-radius: 0.25rem;
+}
+.win{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;  
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    top: 80px;
+    visibility: hidden;
+}
+.lose{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;  
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    top: 80px;
+    visibility: hidden;
+    margin-bottom: -4%;
+}
+
+.score-count{
+    font-size: 25px;
+    color: yellow;
+    font-weight: bold;
+    
+}
+button{
+    height: 50px;
+    width: 150px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;  
+    font-size: 15px; 
+    background-color:black;
+    border:4px solid grey;
+    border-radius: 0.25rem;
+}
+.butt{
+    margin: 1%;
+}
+.butt1{
+    margin-top: -0.2%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 20px;
+}
+.save{
+    display: flex;
+    margin: auto;
+}
+.grifpos{
+    display: flex;
+    align-content:center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    margin-left:7% ;
+    position: absolute;
+}
+.mpos{
+    display: flex;
+    align-content:center;
+    justify-content: center;
+    align-items: center;
+    margin-left:1% ;
+    margin-top: 50%;
+}
+.blin{
+    cursor: pointer;
+    height:27px;
+    margin-bottom: 4%;
+}
+ .border{
+     border:4px gray;
+     border-radius:0.25rem;
+     width:1000px;
+     height: 600px;
+     max-width: 1200px;
+     margin: 5% auto;
+ }
+ .buttons{
+    display: flex;
+    align-content:center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5%;
+ }
+ .strelka{
+     position: absolute;
+     width: 100px;
+     height: 100px;
+     margin-top: 11%;
+     margin-left: 23%;
+ }
+ .left{
+     position: absolute;
+     display: flex;
+     margin-left: 7%;
+     margin-top: 7.5%;
+ }
+ .right{
+    position: absolute;
+    display: flex;
+    margin-left: 39%;
+    margin-top: 7.5%;
+ }
+ .box{
+     margin-left: -1px;
+     width:27px;
+     height: 100px;    
+     background-color: red;
+ }
+ .item{
+     background-color: yellow;
+     width: 10px;
+     height: 10px;
+ }
+.game-score{
+    position: absolute;
+    margin-left: 22.5%;
+    margin-top: 15%;
+    display: inline-block;
+}

@@ -1,0 +1,148 @@
+*{
+    padding: 2px;
+    margin: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+}
+html {
+    background-image: url(../images/1626192986_52-kartinkin-com-p-fon-dlya-messendzhera-krasivo-54.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 2;
+    font-size: 14px;
+    position: relative;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body1{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 50px;
+    
+}
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.top-menu li a::after{
+    content: '';
+    display: block;
+    width:100%;
+    background-color: yellow;
+    height:1px;
+    transition: all 0.3S;
+    transform: scale(0);
+}
+.top-menu li a:hover::after{
+    transform: scale(1);
+}
+.adapt{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+#square {
+    width: 520px;
+    height: 560px;
+    background: rgba(255, 255, 255, 0.171);
+    border: 3px solid yellow;
+    position: relative;
+    top: 15%; 
+    display: flex;
+    align-content:center;
+    justify-content: center;
+    align-items: center;
+    padding: auto; 
+    object-fit: cover; 
+    border-radius: 0.25rem;
+}
+.form-control{
+width: 400px;
+height: 60px;
+position: relative;
+margin-left: auto;
+margin-right: auto; 
+display: flex;
+margin-top: -15px;
+}
+.btn-success{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; 
+    height: 60px;
+    margin-top: -20px;
+    width: 160px;
+    display: flex;
+    align-content:center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(85, 85, 85);
+    background: white;
+}
+.btn-success:hover{
+    color: black;
+    background:yellow;  
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align:center;
+    position:relative;
+    /* margin-top: 3%; */
+}
+
+@media (max-width: 1600px) {
+    h1 {
+        top:-38%;
+        
+    }
+    .btn-success{
+        top:-40%; 
+    }
+    .form-control{
+        top:-39%;
+    }
+}
+@media (min-width: 1601px) {    
+    h1 {
+        top:-38%;
+    }
+}
+body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin:0;
+}
+form{
+    margin-top: -350px;
+}
+.msg{
+    display: flex;
+    align-content:center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+}

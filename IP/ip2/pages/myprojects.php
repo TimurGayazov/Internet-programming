@@ -88,6 +88,58 @@
             </div>
           </div>
 
+          <br>
+          <div class="text-center"><h3>Laboratory work</h3></div>
+          <div class="table_center">
+          <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Lab</th>
+      <th scope="col">Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Lab1</td>
+      <td><a href="/DM/pages/lab1.html">Click</a></td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Lab2</td>
+      <td><a href="#">Click</a></td>
+ 
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Lab3</td>
+      <td><a href="#">Click</a></td>
+ 
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Lab4</td>
+      <td><a href="#">Click</a></td>
+ 
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Lab5</td>
+      <td><a href="#">Click</a></td>
+ 
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Lab6</td>
+      <td><a href="#">Click</a></td>
+ 
+    </tr>
+  </tbody>
+</table>
+          </div>
+
     </main>
 
     <!-- <footer>

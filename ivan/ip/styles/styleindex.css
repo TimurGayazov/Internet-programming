@@ -1,0 +1,128 @@
+*{
+    padding: 2px;
+    margin: 0;
+    border: 0;
+}
+html {
+    background-image: url(../images/1626192986_52-kartinkin-com-p-fon-dlya-messendzhera-krasivo-54.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 2;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:gray;
+    font-size: 35px;
+    text-align:center;
+    max-width: 290px;
+    margin-left: 180px;
+}
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    text-align: center;
+    margin-left: -270px;
+}
+.wrap {
+    width: 100%;
+    margin: 80px auto;
+    position:relative;
+}
+img {
+    height: auto;
+    width: 60%;
+    max-width: 500px;
+    margin-left: -7%;
+    margin-top:120px;
+    align-content:center;
+}
+.left {
+    float: left;
+    width: 49%;
+    margin-top: 200px;
+    margin-left: -150px;
+}
+.right {
+    float: right;
+    width: 49%;
+    margin-top: 200px;
+    margin-right: -350px;
+}
+.left:before, .right:before {
+    content: "";
+    width: 0px;
+    height: 680px;
+}
+.left:before {
+    float: right;
+}
+.right:before {
+    float: left;
+}
+.top-menu li a::after{
+    content: '';
+    display: block;
+    width:100%;
+    background-color: yellow;
+    height:1px;
+    transition: all 0.3S;
+    transform: scale(0);
+}
+.top-menu li a:hover::after{
+    transform: scale(1);
+}
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media (max-width: 279px) {
+    h2 {
+        visibility: hidden;
+    }
+}
+@media (max-width: 1200px) and (min-width: 280px) {
+    h2 {
+        visibility: hidden;
+    }
+}
+@media (min-width: 1201px) {    
+    h2 {
+        font-size: 35px;
+    }
+}
+@media (max-width: 279px) {
+    h3 {
+        visibility: hidden;
+    }
+}
+@media (max-width: 1200px) and (min-width: 280px) {
+    h3 {
+        visibility: hidden;
+    }
+}
+@media (min-width: 1201px) {    
+    h3 {
+        font-size: 45px;
+    }
+}
+  body
+  {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }

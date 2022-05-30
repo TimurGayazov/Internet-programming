@@ -1,0 +1,145 @@
+*{
+    padding: 2px;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+html,body{
+
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 2;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    
+}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+html {
+    background-image: url(../images/1626192986_52-kartinkin-com-p-fon-dlya-messendzhera-krasivo-54.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgba(170, 170, 170, 0.568);
+    font-size: 35px;
+    text-align:center;
+    max-width: 290px;
+}
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    text-align: center;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);  
+    float: left; 
+}
+.left {
+    float: left;
+    margin: 7px 7px 7px 0;
+    border: 3px solid yellow;
+    border-radius: 0.25rem;
+  }
+.top-menu li a::after{
+    content: '';
+    display: block;
+    width:100%;
+    background-color: yellow;
+    height:1px;
+    transition: all 0.3S;
+    transform: scale(0);
+}
+.top-menu li a:hover::after{
+    transform: scale(1);
+}
+
+@media (max-width: 279px) {
+    p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1200px) and (min-width: 280px) {
+    p {
+        font-size: calc(1.3rem + 1 * (100vw - 320px) / 880);
+    }
+}
+@media (min-width: 1201px) {    
+    p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 279px) {
+    h1 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1200px) and (min-width: 280px) {
+    h1 {
+        font-size: calc(1.3rem + 6 * (100vw - 320px) / 880);
+    }
+}
+@media (min-width: 1201px) {    
+    h1 {
+        font-size: 25px;
+    }
+}
+ @media (max-width: 279px) {
+    h2 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1200px) and (min-width: 280px) {
+    h2 {
+        font-size: calc(2rem + 1 * (100vw - 320px) / 880);
+    }
+}
+@media (min-width: 1201px) {    
+    h2 {
+        font-size: 35px;
+    }
+}
+@media (max-width: 279px) {
+    h3 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 1200px) and (min-width: 280px) {
+    h3 {
+        font-size: calc(2rem + 1 * (100vw - 320px) / 880);
+    }
+}
+@media (min-width: 1201px) {    
+    h3 {
+        font-size: 45px;
+    }
+}
